@@ -1,0 +1,2 @@
+# wick-mode.dev
+Projects showcasing my skills in Python, C#, and Web Design
