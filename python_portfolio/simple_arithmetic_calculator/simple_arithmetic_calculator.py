@@ -2,6 +2,7 @@
 Program: Simple Arithmetic Calculator
 Description: This program performs basic arithmetic operations (addition, subtraction, multiplication, division) based on user input.
 Author: Marco Sandoval
+Future Updates: Add more operations, error handling for division by zero, and input validation. Make it run complex calculations like  a scientific calculator.
 """
 operator = ""
 
