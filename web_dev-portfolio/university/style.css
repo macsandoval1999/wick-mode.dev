@@ -1,0 +1,161 @@
+ * /* Universal Styles
+    Here you set default styles for the entire webpage */
+{
+    margin: 0; /* Margin is the space between the border and other elements. This means all elements will start with no margin */
+    padding: 0; /* Padding is the space between the border and the content. This means all elements will start with no padding */
+    font-family: "Poppins", sans-serif; /* Sets the default font for the webpage. If the Poppins font is not available, it will use a generic sans-serif font */
+}
+
+.header /* Header Styles
+    Here you can style containers classed "header" */
+{
+    min-height: 100vh; /* Sets the minimum height of the header to 100% of the viewport height */
+    width: 100%; /* Sets the width of the header to 100% of the viewport width */
+    background-image: linear-gradient(rgba(4,9,30,0.7), rgba(4,9,30,0.7)), url('images/university-banner.jpg'); /* Adds a background image with a gradient overlay
+    background-image: Sets the background image for the header
+    linear-gradient(rgba(4,9,30,0.7), rgba(4,9,30,0.7)) this creates a dark blue gradient overlay where both colors are the same with 70% opacity
+    url('images/university-banner.jpg') this is the actual image that will be displayed*/
+    background-size: cover; /* Ensures the background image covers the entire header */
+    background-position: center; /* Centers the background image to the element. Here it is centered to the viewport since the viewport is the entire browser window */
+    background-size: cover; /* Ensures the background image covers the entire header */
+    position: relative; /* Sets the position of the header to relative, allowing for absolute positioning of child elements */
+}
+
+nav /* Universal Navigation Style
+    Here you can style the default for all navigation containers */
+{
+    display: flex; /* Sets nav container to flexbox, allowing for flexible layouts for its child elements */
+    padding: 2% 6%; /* Adds padding inside the nav container */
+    justify-content: space-between; /* Distributes space between child elements, pushing them to the edges of the nav container */
+    align-items: center; /* Centers the child elements vertically within the nav container */
+}
+nav img /* Navigation Logo Style
+    Here you can style the default for images in the navigation bar. nav img is part of the navigation container so sizing and placement will be relative to the nav container */
+{
+    width: 150px; /* Sets the width of the navigation images to 150px */
+}
+nav .fa-solid /* nav Items classed "fa-solid"
+    Here we style the nav Items classed "fa-solid" for bigger screens. Since we don't want these to display on bigger screens, we will just hide them from bigger screens. */
+{
+    display: none; /* Hides the Font Awesome icons by default. This ensures that larger screens will not see these logos */
+}
+
+
+.nav-links /* "nav-links" Style
+    Here you can style all elements with the class of "nav-links" */
+{
+    flex: 1; /* flex tells how to expand. flex:1 tells the item to expand and share space with other flex items. In this case, this applies to each link item so each link is flex:1 */
+    text-align: right; /* Aligns the text of the navigation links to the right of the flex container. Here the flex container is the nav bar */
+}
+.nav-links ul li /* "nav-links" List Items Style
+    Here you can style all list items within "nav-links" classed elements */
+{
+    display: inline-block; /* Displays the list items in a horizontal line */
+    padding: 8px 12px; /* Adds padding around each list item. 8px top/bottom, 12px left/right */
+    list-style: none; /* Removes the default bullet points from list items */
+    position: relative; /* Sets the position of the list items to relative, allowing for absolute positioning of child elements */
+}
+.nav-links ul li a /* "nav-links" List Item Anchor Tags Style
+    Here you can style all anchor tags within the List Items of "nav-links" classed elements */
+{
+    color: #fff; /* Sets the text color of the links to white */
+    text-decoration: none; /* Removes the underline from links */
+    font-size: 13px; /* Sets the font size of the links */
+}
+.nav-links ul li a:after /* "nav-links" List Item Anchor Tags Hover Style
+    Here you can style the pseudo-element that appears after each link inside a list item within elements class "nav-links" for a custom underline effect. This style appears as a solid line if hover isnt applied */
+{
+    content: ""; /* Creates a pseudo-element for the underline effect. Leaving it blank simply means the pseudo element exists but doesnt have any visible text. Without this, the pseudo element or underline effect will not appear.*/
+    width: 100%; /* Sets the width of the underline to 100% of the link */
+    height: 2px; /* Sets the height of the underline to 2px */
+    background: #f44336; /* Sets the background color of the underline */
+    display: block; /* Ensures the pseudo-element is a block element */
+    margin: auto; /* Centers the underline */
+    transition: 0.5s; /* Adds a transition effect to the underline, making it smooth when hovered. The effect here lasts 0.5 seconds */
+}
+.nav-links ul li a:hover:after /* "nav-links" List Item Anchor Tags Hover Style
+    Going off of the .nav ul li a:after style block, here you can style the pseudo-element when the cursor hovers over a link inside the "nav-links" class list items*/
+{
+    width: 0; /* Sets the width of the underline to 0 when hovered, creating a disappearing effect. This works in conjunction with the transition property to create a smooth effect */
+    /* NOTE: If you wanted the opposite effect (i.e., the underline to grow when hovered), you would set the width to 100% here and the width in the nav-links ul li a:after style block to 0 */
+}
+
+.text-box /* "text-box" Style
+    Here you can style containers classed "text-box" */
+{
+    width: 90%; /* Sets the width of the text box to 90% of its parent container */
+    color: #fff; /* Sets the text color to white */
+    position: absolute; /* Positions the text box absolutely within its parent container */
+    top: 50%; /* Positions the top of the text box at 50% of the height of its parent container */
+    left: 50%; /* Positions the left of the text box at 50% of the width of its parent container */
+    transform: translate(-50%, -50%); /* Centers the text box by translating it back by 50% of its own width and height */
+    text-align: center; /* Centers the text inside the text box */
+}
+.text-box h1 /* "text-box" Heading Style
+    Here you can style headings inside containers classed "text-box" */
+{
+    font-size: 62px; /* Sets the font size of the heading to 62px */
+}
+.text-box p /* "text-box" Paragraph Style
+    Here you can style paragraphs inside containers classed "text-box" */
+{
+    margin: 10px 0 40px; /* Adds a top margin of 10px, 0 for left/right, and a bottom margin of 40px*/
+    font-size: 14px;
+    color: white; /* Sets the text color to white */
+}
+
+.hero-btn /* "hero-btn" Style
+    Here you can style elements with the class "hero-btn" */
+{
+
+    border-radius: 50px; /* Rounds the corners of the button to create a pill shape */
+    border: 1px solid white;
+    display: inline-block; /* Displays the button as an inline-block element */
+    text-decoration: none; /* Removes the underline from the button link */
+    color: #fff; /* Sets the text color of the button to white */
+    padding: 12px 34px; /* Adds padding around the button text. 12px top/bottom, 34px left/right */
+    font-size: 13px; /* Sets the font size of the button text */
+    background: transparent; /* Sets the background of the button to transparent */
+    position: relative; /* Sets the position of the button to relative, allowing for absolute positioning of child elements */
+    cursor: pointer; /* Changes the cursor to a pointer when hovering over the button, indicating it is clickable */
+}
+.hero-btn:hover /* "hero-btn" Hover Style
+    Going off of the .hero-btn style block, here you can style elements with the class "hero-btn" when hovered */
+{
+    background: #f44336; /* Changes the background color of the button to red when hovered */
+    transition: 1s; /* Adds a transition effect to the button, making it smooth when hovered */
+}
+
+@media(max-width: 700px)
+{
+    .text-box h1 /* "text-box" Heading Style for Mobile
+        Here you can style headings inside containers classed "text-box" for screens smaller than 700px */
+    {
+        font-size: 20px; /* Reduces the font size of the heading to 20px on smaller screens */
+    }
+    .nav-links ul li /* "nav-links" List Item Style for Mobile
+        Here you can style list items inside the "nav-links" class for screens smaller than 700px */
+    {
+        display: block; /* Changes the display of the list items to block, stacking them vertically */
+    }
+    .nav-links /* "nav-links" Style for Mobile
+        Here you can style the "nav-links" container for screens smaller than 700px */
+    {
+        position:absolute; /* Positions the nav links absolutely within their parent container */
+        background: #f44336; /* Sets the background color of the nav links to red */
+        height: 100vh; /* Sets the height of the nav links to 100% of the viewport height */
+        width: 200px;
+        top: 0; /* Positions the top of the nav links at the top of the viewport */
+        right: 0; /* Positions the right of the nav links at the right edge of the viewport */
+        text-align: left; /* Centers the text inside the nav links */
+        z-index: 2; /* Ensures the nav links are above other content */
+    }
+    nav .fa-solid
+    {
+        display: block; /* Displays the Font Awesome icons in the nav links */
+        color: white; /* Sets the color of the Font Awesome icons to white */
+        margin: 10px; /* Adds a margin of 10px around the icons */
+        font-size: 22px; /* Sets the font size of the Font Awesome icons to 22px */
+        cursor: pointer; /* Changes the cursor to a pointer when hovering over the icons, indicating they are clickable */
+    }
+}

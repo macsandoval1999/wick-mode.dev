@@ -1,0 +1,50 @@
+<!-- Always start with the code "html:5" to generate the web page structure -->
+<!DOCTYPE html> <!-- This declaration defines this document as an HTML5 document -->
+<html lang="en"> <!-- The lang attribute specifies the language of the document, which is English in this case. -->
+<head>  <!-- The head element contains meta-information about the document. meta information is not displayed on the page but is important for search engines and browsers. -->
+    <meta charset="UTF-8"> <!-- Specifies the character encoding for the HTML document -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Ensures the page is responsive on different devices. 
+    meta name = "viewport" tells the browser that this meta tag controls the visible area of the web on a device. 
+    content = "width=device-width" sets the width of the page to follow the screen-width of the device (which will vary depending on the device). 
+    initial-scale=1.0" sets the initial zoom level to 1 which is no zoom when the page is first loaded by the browser.-->
+    <title>University Web Design</title> <!-- Title of the page, displayed in the browser tab -->
+    <link rel="stylesheet" href="style.css"> <!-- Link to the external CSS file.
+    link rel="stylesheet" specifies the relationship between the current document and the linked document.
+    href="style.css" specifies the location of the linked document. -->
+    <link rel="preconnect" href="https://fonts.googleapis.com"> <!-- LINES 14-16 IS THE LINK FOR THE POPPINS FONT. Preconnects to the Google Fonts API for faster loading -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> <!--preconnects to the fonts.gstatic.com domain. The crossorigin attribute allows the browser to make cross-origin requests for the font files -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet"> <!-- Links to the Poppins font styles from Google Fonts -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"> <!-- Links to the Font Awesome styles for icons -->
+</head>
+<body> <!-- The body element contains the content of the document that is displayed in the browser. -->
+    <section class="header"> <!-- Section for the header of the page. The class "header" is used for styling purposes in CSS. Every page will have this section classed header
+    Sections are used to divide the page into different parts, making it easier to style and manage. 
+    classes are names used to apply specific styles to elements, they can be used for multiple elements as opposed to id's.-->
+        <nav> <!-- Navigation bar for the website
+        nav elements are used to define a set of navigation links. It is a container for the navigation links -->
+            <a href="index.html"><img src="images/university-logo.webp" alt="University Logo"></a> <!-- This is a hyperlink that wraps the image of the university logo and links it to the index page.
+            a href="index.html" is the link to the index page
+            img src="images/university-logo.webp" is the path to the logo image
+            alt="University Logo" provides alternative text for the image if it isn't available or supported by the browser -->
+            <div class="nav-links"> <!-- Navigation links container
+            div containers allow for grouping and styling of related elements. the name div itself has no semantic meaning but is used for styling purposes -->
+                <i class="fa-solid fa-xmark"></i> <!-- Font Awesome icon for a close button, used in mobile navigation -->
+                <ul> <!-- Unordered list for navigation links
+                This allows for easy styling and layout of the navigation items
+                Each item has a bullet point until styled otherwise. Each item in the list is contained with <li> list items, that contain <a> links-->
+                    <li><a href="about.html">About Us</a></li> <!-- Each list item contains a link to a different page -->
+                    <li><a href="programs.html">Programs</a></li>
+                    <li><a href="admissions.html">Admissions</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <i class="fa-solid fa-bars"></i> <!-- Font Awesome icon for a menu button, used in mobile navigation -->
+        </nav>
+        <div class="text-box">
+            <h1>World's Biggest University</h1> <!-- Main heading for the page. h1 is the first level of a heading element which is the biggest-->
+            <p>Welcome to the University of Knowledge <br>where we nurture the leaders of tomorrow.</p> <!-- Paragraph introducing the university. <br> is a line break to create a new line. p is an element containing text-->
+            <a href="" class="hero-btn">Visit us to know more</a>
+        </div>
+    </section>
+</body>
+</html>
