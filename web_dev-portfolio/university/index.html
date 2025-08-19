@@ -17,6 +17,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"> <!-- Links to the Font Awesome styles for icons -->
 </head>
 <body> <!-- The body element contains the content of the document that is displayed in the browser. -->
+    
+<!-- -----HEADER SECTION START----- -->    
     <section class="header"> <!-- Section for the header of the page. The class "header" is used for styling purposes in CSS. Every page will have this section classed header
     Sections are used to divide the page into different parts, making it easier to style and manage. 
     classes are names used to apply specific styles to elements, they can be used for multiple elements as opposed to id's.-->
@@ -26,9 +28,10 @@
             a href="index.html" is the link to the index page
             img src="images/university-logo.webp" is the path to the logo image
             alt="University Logo" provides alternative text for the image if it isn't available or supported by the browser -->
-            <div class="nav-links"> <!-- Navigation links container
+            <div class="nav-links" id="navLinks"> <!-- div container classed "nav-links" and "id" set to "navLinks" for JavaScript targeting
             div containers allow for grouping and styling of related elements. the name div itself has no semantic meaning but is used for styling purposes -->
-                <i class="fa-solid fa-xmark"></i> <!-- Font Awesome icon for a close button, used in mobile navigation -->
+                <i class="fa-solid fa-xmark" onclick="hideMenu()"></i> <!-- italic tag calls the "fa-solid fa-xmark" logo from the Font Awesome library. When doing something like this, class merely is the logo being called.
+                onclick adds a click event handler, which calls the hideMenu() javascriptfunction when the element is clicked -->
                 <ul> <!-- Unordered list for navigation links
                 This allows for easy styling and layout of the navigation items
                 Each item has a bullet point until styled otherwise. Each item in the list is contained with <li> list items, that contain <a> links-->
@@ -38,13 +41,156 @@
                     <li><a href="contact.html">Contact</a></li>
                 </ul>
             </div>
-            <i class="fa-solid fa-bars"></i> <!-- Font Awesome icon for a menu button, used in mobile navigation -->
+            <i class="fa-solid fa-bars" onclick="showMenu()"></i> <!-- Font Awesome icon for a menu button, used in mobile navigation -->
         </nav>
         <div class="text-box">
             <h1>World's Biggest University</h1> <!-- Main heading for the page. h1 is the first level of a heading element which is the biggest-->
             <p>Welcome to the University of Knowledge <br>where we nurture the leaders of tomorrow.</p> <!-- Paragraph introducing the university. <br> is a line break to create a new line. p is an element containing text-->
-            <a href="" class="hero-btn">Visit us to know more</a>
+            <a href="" class="hero-btn">Visit us to know more</a> <!-- Hyperlink that will act as a Button classed "hero-btn" to encourage users to visit the university. -->
         </div>
     </section>
+<!-- -----HEADER SECTION END----- -->
+
+<!-- -----COURSES SECTION START----- -->
+    <section class="course"> <!-- Section for the courses offered by the university. section is classed "course" -->
+        <h2>Courses We Offer</h2> 
+        <p>Explore a variety of programs designed to help you succeed.</p>
+        <div class="row"> <!-- Div container classed "row" to group the course items -->
+            <div class="course-item"> <!-- Each course information is an individual div container classed "course-item" for individual course details -->
+                <h3>CSE 210<br>Programming with classes</h3>
+                <p>Learn the fundamentals of object-oriented programming. Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis nobis magni neque maiores doloribus eligendi.</p>
+            </div>
+            <div class="course-item">
+                <h3>CSE 220<br>Data Structures and Algorithms</h3>
+                <p>Master the essential data structures and algorithms. Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis nobis magni neque maiores doloribus eligendi.</p>
+            </div>
+            <div class="course-item">
+                <h3>CSE 230<br>Web Development Fundamentals</h3>
+                <p>Learn the basics of web development, including HTML, CSS, and JavaScript. Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis nobis magni neque maiores doloribus eligendi.</p>
+            </div>
+        </div>
+    </section>
+<!-- -----COURSES SECTION END----- -->
+
+<!-- -----CAMPUS SECTION START----- -->
+    <section class="campus"> <!-- Section container for the campus information. section is classed "campus" -->
+        <h1>Our Global Campus</h1>
+        <p>Discover our campuses located around the world, each offering unique programs and experiences.</p>
+        <div class="row"> <!-- Div container classed "row" to group the campus items -->
+            <div class="campus-item"> <!-- Each campus information is an individual div container classed "campus-item" for individual campus details -->
+                <img src="images/london.webp" alt="London Campus">
+                <div class="layer">
+                    <h3>London Campus</h3>
+                </div>
+            </div>
+            <div class="campus-item">
+                <img src="images/texas.webp" alt="Texas Campus">
+                <div class="layer">
+                    <h3>Texas Campus</h3>
+                </div>
+            </div>
+            <div class="campus-item">
+                <img src="images/arizona.webp" alt="Arizona Campus">
+                <div class="layer">
+                    <h3>Arizona Campus</h3>
+                </div>
+            </div>
+    </section>
+<!-- -----CAMPUS SECTION END----- -->
+
+<!-- -----FACILITIES SECTION START----- -->
+    <section class="facilities"> <!-- Section container for the facilities information. section is classed "facilities" -->
+        <h1>Our Facilities</h1>
+        <p>We offer state-of-the-art facilities to enhance your learning experience.</p>
+        <div class="row"> <!-- Div container classed "row" to group the facilities items -->
+            <div class="facilities-item"> <!-- Each facility information is an individual div container classed "facilities-item" for individual facility details -->
+                <img src="images/class.webp" alt="Computer Lab">
+                <h3>Modern Classrooms</h3>
+                <p>Equipped with the latest technology to facilitate interactive learning.</p>
+            </div>
+            <div class="facilities-item">
+                <img src="images/library.webp" alt="World Class Library">
+                <h3>World Class Library</h3>
+                <p>A vast collection of books and digital resources for research and study.</p>
+            </div>
+            <div class="facilities-item">
+                <img src="images/sports.webp" alt="Sports Complex">
+                <h3>Sports Complex</h3>
+                <p>State-of-the-art facilities for various sports and physical activities.</p>
+            </div>
+        </div>
+    </section>
+<!-- -----FACILITIES SECTION END----- -->
+
+<!-- -----TESTIMONIALS SECTION  START----- -->
+    <section class="testimonials"> <!-- Section container for the testimonials information. section is classed "testimonials" -->
+        <h1>What Our Students Say</h1> <!-- Main heading for the testimonials section -->
+        <p>Hear from our students about their experiences at the university.</p> <!-- Paragraph introducing the testimonials section -->
+        <div class="row"> <!-- Div container classed "row" to group the testimonial items -->
+            <div class="testimonials-item"> <!-- Individual testimonial items are in div containers classed "testimonials-item" -->
+                <img src="images/student1.webp" alt="Student 1">
+                <div>
+                    <p>"The university has transformed my life. The faculty is incredibly supportive and the resources are top-notch!"</p>
+                    <h3>- Jane Doe</h3>
+                    <i class="fa-solid fa-star"></i> <!-- Font Awesome star icon for rating. This is a full star -->
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star-half-stroke"></i> <!-- Font Awesome star icon for rating. This is a full half star -->
+                </div>
+            </div>
+            <div class="testimonials-item">
+                <img src="images/student2.webp" alt="Student 2">
+                <div>
+                    <p>"I love the diverse community and the opportunities to engage in real-world projects."</p>
+                    <h3>- John Smith</h3>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star"></i> <!-- Font Awesome star icon for rating. This is a full empty star -->
+                </div>
+            </div>
+    </section>
+<!-- -----TESTIMONIALS SECTION END----- -->
+
+<!-- -----CALL TO ACTION SECTION START----- -->
+<section class="cta">
+    <h1>Enroll For Our Various Courses<br>Anywhere From The World</h1>
+    <a href="" class="hero-btn">CONTACT US</a>
+</section>
+<!-- -----CALL TO ACTION SECTION END----- -->
+
+<!-- -----FOOTER SECTION START----- -->
+<footer>
+    <section class="footer">
+        <h4>About Us</h4>
+        <p>We areut sint earum nobis veritatis repudiandae minima amet numquam nam et magnam eaque eligendi animi distinctio deserunt quo? <br>Voluptatibus totam sequi, omnis atque officiis dolore repes porro, facere pariatur dignissimos, nulla sunt mollitia? Neque ad eaque nobis quis, maxipedit facere.</p>
+        <div class="icons">
+            <i class="fa-brands fa-facebook-f"></i> <!-- Font Awesome icon for Facebook -->
+            <i class="fa-brands fa-twitter"></i> <!-- Font Awesome icon for Twitter -->
+            <i class="fa-brands fa-instagram"></i> <!-- Font Awesome icon for Instagram -->
+            <i class="fa-brands fa-linkedin"></i> <!-- Font Awesome icon for LinkedIn -->
+        </div>
+        <p>Made with <i class="fa-regular fa-heart"></i> by Easy Tutorials</p>
+    </section>
+</footer>
+<!-- -----FOOTER SECTION END----- -->
+
+<!-- -----JavaScript for Toggle Menu (Mobile) Start----- -->
+    <script> // JavaScript for toggling the navigation menu on mobile devices
+    // script is used to add interactivity to the navigation menu
+        var navLinks = document.getElementById("navLinks"); // Gets the element with the id "navLinks" and assigns it to the variable navLinks
+        function showMenu()  // This function is called when the menu button is clicked
+        { 
+            navLinks.style.right = "0";
+        }
+
+        function hideMenu()  // This function is called when the close button is clicked
+        { 
+            navLinks.style.right = "-200px";
+        }
+    </script>
+<!-- -----JavaScript for Toggle Menu (Mobile) End----- -->
 </body>
 </html>

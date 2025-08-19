@@ -126,7 +126,245 @@ nav .fa-solid /* nav Items classed "fa-solid"
     transition: 1s; /* Adds a transition effect to the button, making it smooth when hovered */
 }
 
-@media(max-width: 700px)
+.course /* "course" Style
+    Here you can style any container classed "course" */
+{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+}
+
+h1 /* h1 Style
+    Here you can set the default style for all h1 elements */
+{
+    font-size: 36px; /* Sets the default font size of all h1 elements to 36px */
+    font-weight: 600; /* Sets the default font weight of all h1 elements to 600 (bold) */
+}
+
+p /* p Style
+    Here you can set the default style for all p elements */
+{
+    color: rgb(0, 0, 0); /* Sets the default text color of all paragraphs to black */
+    font-size: 14px; /* Sets the default font size of all paragraphs to 14px */
+    font-weight: 300; /* Sets the default font weight of all paragraphs to 300 (light) */
+    line-height: 22px; /* Sets the line height of all paragraphs to 22px, which controls the spacing between lines of text */
+    padding: 10px; /* Adds padding around all paragraphs */
+}
+
+.row /* "row" Style
+    Here you can style containers classed "row" */
+{
+    margin-top:5%; /* Adds a top margin of 5% to the containers classed row */
+    display: flex; /* Sets the display of the row to flexbox, allowing for flexible layouts */
+    justify-content: space-between; /* Distributes space between the course items */
+}
+
+.course-item /* "course-item" Style
+    Here you can style containers classed "course-item" */
+{
+    flex-basis: 31%; /* Sets the base width of each course item to 31% of the row, allowing for three items to fit in a row with some space between them */
+    background: #fff3f3; /* Sets the background color of each course item to a light pink */
+    border-radius: 10px; /* Rounds the corners of each course item with a radius of 10px */
+    margin-bottom: 5%; /* Adds a bottom margin of 5% to each course item */
+    padding: 20px 12px; /* Adds padding inside each course item */
+    box-sizing: border-box; /* Ensures that padding and border are included in the total width and height of the course item */
+    transition: 0.5s; /* Adds a transition effect to the course item, making it smooth when hovered or interacted with */
+}
+.course-item:hover /* "course-item" Hover Style
+    Here you can style elements with the class "course-item" when hovered */
+{
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2); /* Adds a shadow effect to the course item when hovered, creating a subtle lift effect */
+}
+
+h3 /* h3 Style
+    Here you can set the default style for all h3 elements */
+{
+    text-align:center; /* Centers the text inside all h3 elements */
+    font-weight: 600; /* Sets the font weight of all h3 elements to 600 (bold) */
+    margin: 10px 0; /* Adds a top and bottom margin of 10px to all h3 elements */
+}
+
+.campus /* "campus" Style
+    Here you can style containers classed "campus" */
+{
+    width: 80%; /* Sets the width of the campus section to 80% of its parent container */
+    margin: auto; /* Centers the campus section horizontally within its parent container */
+    text-align: center; /* Centers the text inside the campus section */
+    padding-top: 50px; /* Adds padding to the top of the campus section */
+}
+.campus-item /* "campus-item" Style
+    Here you can style containers classed "campus-item" */
+{
+    flex-basis:32%; /* Sets the base width of each campus item to 32% of the row, allowing for three items to fit in a row with some space between them */
+    border-radius: 10px; /* Rounds the corners of each campus item with a radius of 10px */
+    margin-bottom: 30px; /* Adds a bottom margin of 30px to each campus item */
+    position: relative; /* Positions the campus item relative to its normal position */
+    overflow: hidden; /* Hides any overflowing content within the campus item */
+}
+.campus-item img /* "campus-item" Image Style
+    Here you can style images inside containers classed "campus-item" */
+{
+    width: 100%; /* Sets the width of the image to 100% of its parent container */
+    height: 100%; /* Sets the height of the image to auto, maintaining its aspect ratio */
+    display: block; /* Displays the image as a block element */
+}
+.layer /* "layer" Style
+    Here you can style elements with the class "layer" */
+{
+    background: transparent; /* Sets the background of the layer to transparent */
+    height: 100%; /* Sets the height of the layer to 100% of its parent container */
+    width: 100%; /* Sets the width of the layer to 100% of its parent container */
+    position:absolute; /* Positions the layer absolutely within its parent container */
+    top: 0; /* Positions the top of the layer at the top of the parent container */
+    left: 0; /* Positions the left of the layer at the left of the parent container */
+    transition: 0.5s; /* Adds a transition effect to the layer, making it smooth when hovered or interacted with */
+}
+.layer:hover /* "layer" Hover Style
+    Here you can style elements with the class "layer" when hovered */
+{
+    background: rgba(226,0,0,0.9); /* Darkens the background on hover */
+}
+.layer h3 /* "layer" h3 Style
+    Here you can style h3 headers inside containers classed "layer" */
+{
+    width: 100%; /* Sets the width of the heading to 100% of its parent container */
+    font-weight: 500; /* Sets the font weight of the heading to 500 (medium) */
+    color: white; /* Sets the text color of the heading to white */
+    font-size: 26px; /* Sets the font size of the heading to 26px */
+    bottom: 0; /* Positions the bottom of the heading at the bottom of the parent container */
+    left: 50%; /* Positions the left of the heading at 50% of the width of the parent container */
+    transform: translateX(-50%); /* Centers the heading horizontally */
+    position: absolute; /* Positions the heading absolutely within its parent container */
+    opacity: 0; /* Sets the initial opacity to 0 (invisible) */
+    transition: 0.5s; /* Adds a transition effect to the heading, making it smooth when hovered or interacted with */
+}
+.layer:hover h3 /* "layer" h3 Hover Style
+    Here you can style h3 headers inside containers classed "layer" when hovered */
+{
+    bottom: 49%; /* Moves the heading up slightly when hovered */
+    opacity: 1; /* Sets the opacity to 1 (fully visible) when hovered */
+}
+
+.facilities 
+{
+    width: 80%; /* Sets the width of the facilities section to 80% of its parent container */
+    margin: auto; /* Centers the facilities section horizontally within its parent container */
+    text-align: center; /* Centers the text inside the facilities section */
+    padding-top: 100px; /* Adds padding to the top of the facilities section */
+}
+.facilities-item
+{
+    flex-basis: 31%; /* Sets the base width of each facilities item to 31% of the row, allowing for three items to fit in a row with some space between them */
+    border-radius: 10px; /* Rounds the corners of each facilities item with a radius of 10px */
+    margin-bottom: 5%; /* Adds a bottom margin of 5% to each facilities item */
+    text-align: left; /* Aligns the text inside each facilities item to the left */
+}
+.facilities-item img
+{
+    width: 100%; /* Sets the width of the image to 100% of its parent container */
+    border-radius: 10px; /* Rounds the corners of the image with a radius of 10px */
+}
+.facilities-item p
+{
+    padding: 0; /* Removes default padding from the paragraph. 0 says that any pre-existing padding should be removed for paragraphs inside facilities items */
+}
+.facilities-item h3 
+{
+    margin-top: 16px; /* Adds a top margin of 16px to each facilities item heading */
+    margin-bottom: 15px; /* Adds a bottom margin of 15px to each facilities item heading */
+    text-align: left; /* Aligns the text of the heading to the left */
+}
+
+.testimonials
+{
+    width: 80%; /* Sets the width of the testimonials section to 80% of its parent container */
+    margin: auto; /* Centers the testimonials section */
+    padding-top: 100px; /* Adds padding to the top of the testimonials section */
+    text-align: center; /* Centers the text inside the testimonials section */
+}
+.testimonials-item
+{
+    flex-basis: 44%; /* Sets the base width of each testimonials item to 44% of the row, allowing for two items to fit in a row with some space between them */
+    border-radius: 10px; /* Rounds the corners of each testimonials item with a radius of 10px */
+    margin-bottom: 5%; /* Adds a bottom margin of 5% to each testimonials item */
+    text-align: left; /* Aligns the text inside each testimonials item to the left */
+    background: #fff3f3; /* Sets the background color of each testimonials item to a light red */
+    padding: 25px; /* Adds padding of 25px to each testimonials item */
+    cursor:pointer; /* Changes the cursor to a pointer when hovering over the testimonials item */
+    display: flex; /* Changes the display of the testimonials item to flexbox, allowing for flexible layouts */
+}
+.testimonials-item img
+{
+    height: 40px; /* Sets the height of the image to 40px */
+    margin-left: 5px; /* Adds a left margin of 5px to the image */
+    margin-right: 30px; /* Adds a right margin of 30px to the image */
+    border-radius: 50%; /* Rounds the corners of the image to create a circular shape */
+}
+.testimonials-item p
+{
+    padding: 0; /* Removes default padding from the paragraph */
+}
+.testimonials-item h3 
+{
+    margin-top: 15px; /* Adds a top margin of 15px to each testimonials item heading */
+    text-align: left; /* Aligns the text of the heading to the left */
+}
+.testimonials-item .fa-solid, .testimonials-item .fa-regular /* "testimonials-item" Font Awesome Icons Style
+/* Here you can style Font Awesome icons inside testimonials items */
+/* This styles the Font Awesome icons inside testimonials items */
+{
+    color: #f44336; /* Sets the color of the Font Awesome icons to the primary red color */
+}
+
+.cta
+{
+    margin:100px auto; /* Centers the call to action section with a top and bottom margin of 100px */
+    width: 80%; /* Sets the width of the call to action section to 80% of its parent container */
+    background-image: linear-gradient(rgba(0,0,0.7), rgba(0,0,0,0.7)), url('images/grad.webp'); /* Adds a background image with a gradient overlay. You are able to put an image on css without making it an element in html */
+    background-position: center; /* Centers the background image */
+    background-size: cover; /* Covers the entire section with the background image */
+    border-radius: 10px; /* Rounds the corners of the call to action section */
+    text-align:center; /* Centers the text inside the call to action section */
+    padding: 100px 0; /* Adds padding of 100px to the top and bottom of the call to action section */
+}
+.cta h1 /* "cta" Heading Style
+    Here you can style headings inside containers classed "cta" */
+{
+    color: #fff; /* Sets the text color of the heading to white */
+    margin-bottom: 40px; /* Adds a bottom margin of 40px to the heading */
+    padding: 0; /* Removes default padding from the heading */
+}
+
+.footer
+{
+    width: 100%; 
+    text-align:center;
+    padding: 30px 0;
+}
+.footer h4 /* "footer" Heading Style
+    Here you can style headings inside containers classed "footer" */
+{
+    margin-bottom: 10px; /* Adds a bottom margin of 10px to the heading */
+    font-weight: 600; /* Sets the font weight of the heading to 600 (bold) */
+}
+
+.icons .fa-brands
+{
+    color:#f44336;
+    margin: 0 13px;
+    cursor: pointer; /* Changes the cursor to a pointer when hovering over the icons, indicating they are clickable */
+    padding: 18px 0; /* Adds padding of 18px to the top and bottom of the icons */
+}
+.footer .fa-heart
+{
+    color: #f44336; /* Sets the color of the heart icon to the primary red color */
+}
+
+/* -----MOBILE----- */
+
+@media(max-width: 700px) /* Mobile Styles
+    Here you can style elements for screens smaller than 700px */
 {
     .text-box h1 /* "text-box" Heading Style for Mobile
         Here you can style headings inside containers classed "text-box" for screens smaller than 700px */
@@ -146,9 +384,10 @@ nav .fa-solid /* nav Items classed "fa-solid"
         height: 100vh; /* Sets the height of the nav links to 100% of the viewport height */
         width: 200px;
         top: 0; /* Positions the top of the nav links at the top of the viewport */
-        right: 0; /* Positions the right of the nav links at the right edge of the viewport */
+        right: -200px; /* Positions the right of the nav links off-screen to the right by default. This hides the screen, granting us the ability to do onclick="hideMenu()" and "showMenu()" on the html for the mobile menu */
         text-align: left; /* Centers the text inside the nav links */
         z-index: 2; /* Ensures the nav links are above other content */
+        transition: 0.5s; /* Adds a transition effect to the nav links, making it smooth when shown or hidden */
     }
     nav .fa-solid
     {
@@ -157,5 +396,23 @@ nav .fa-solid /* nav Items classed "fa-solid"
         margin: 10px; /* Adds a margin of 10px around the icons */
         font-size: 22px; /* Sets the font size of the Font Awesome icons to 22px */
         cursor: pointer; /* Changes the cursor to a pointer when hovering over the icons, indicating they are clickable */
+    }
+    .nav-links ul
+    {
+        padding: 30px; /* Adds padding around the list of links in the nav */
+    }
+    .row
+    {
+        flex-direction: column; /* Stacks the course items vertically */
+    }
+    .testimonials-item
+    {
+        margin-left: 0px; /* Adds a left margin of 0px to each testimonials item */
+        margin-right: 15px; /* Adds a right margin of 15px to each testimonials item */
+
+    }
+    .cta h1
+    {
+        font-size: 24px; /* Reduces the font size of the call to action heading to 24px on smaller screens */
     }
 }
