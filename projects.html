@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WickModeDev - Projects</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"> <!-- Font Awesome link for icons -->
+</head>
+<body>
+    <!-- -----Navigation Bar----- -->
+    <nav class="navbar"> <!-- Nav container classed "navbar" -->
+        <a href="index.html" class="logo">WickMode Dev</a> <!-- Hyperlink directing browser to the element with id "home". This hyperlink appears as "WickMode Dev". The element with the id "home" is in  hero section of the page, or rather the <section> container IS the element with the id "home". -->
+        <div class="menu-icon" id="menuIcon"> <!-- Div container classed "menu-icon" with an id of "menuIcon". This container is used to create a Menu icon for mobile view. By default it would display, but with css and javascript we are able to hide it from big screens and show it on small screens. -->
+            <i class="fa-solid fa-bars"></i> <!-- Font Awesome icon for the menu (hamburger icon) -->
+        </div>
+        <ul class="nav-links" id="navLinks"> <!-- Unordered list container classed "nav-links" with an id of "navLinks". This container holds the navigation links. -->
+            <li><a href="index.html">Home</a></li> <!-- List item containing a hyperlink directing the browser to the home section. It appears as "Home" -->
+            <li><a href="index.html#skills">Skills</a></li> <!-- List item containing a hyperlink directing the browser to the skills section. It appears as "Skills" -->
+            <li><a href="projects.html">Projects</a></li> <!-- List item containing a hyperlink directing the browser to the projects section. It appears as "Projects" -->
+            <li><a href="#index.html#contact">Contact</a></li> <!-- List item containing a hyperlink directing the browser to the contact section. It appears as "Contact" -->
+            <li class="close-icon" id="closeIcon"> <!-- List item classed "close-icon" with an id of "closeIcon" containing a close icon for the mobile menu -->
+                <i class="fa-solid fa-xmark"></i>
+            </li> 
+        </ul>
+    </nav>
+
+
+
+    <!-- -----Python Portfolio Section----- -->
+    <section class="project">
+        <h1>Python Portfolio</h1>
+        <p>Portfolio containing Python projects and scripts.</p>
+        <br>
+        <a class="cta-btn" href="https://github.com/macsandoval1999/wick-mode.dev/tree/f62163153cf1b617e92f5d27d77bc301ebd76abd/python_portfolio" target="_blank"><h3>Python</h3></a>
+    </section>
+
+        <!-- -----C# Portfolio Section----- -->
+    <section class="project">
+        <h1>C# Portfolio</h1>
+        <p>Portfolio containing C# projects and scripts.</p>
+        <br>
+        <a class="cta-btn" href="https://github.com/macsandoval1999/wick-mode.dev" target="_blank"><h3>C#</h3></a>
+    </section>
+
+
+    <!-- -----Web Dev Section----- -->
+    <section class="project"> <!-- Section container for the campus information. section is classed "campus" -->
+        <h1>Web Dev Portfolio</h1>
+        <p>Below are some mock-up websites showcasing my journey as a web developer</p>
+        <div class="row"> <!-- Div container classed "row" to group the campus items -->
+            <div class="project-item"> <!-- Each campus information is an individual div container classed "campus-item" for individual campus details -->
+                <a href="web_dev-portfolio/university/index.html" target="_blank">
+                    <img src="images/university-snip.webp" alt="University Website">
+                    <div class="Last Updated: August layer">
+                        <h3>University Website</h3>
+                        <p>Last Updated: August 17, 2025</p>
+                    </div>
+                </a>
+            </div>
+            <div class="project-item">
+                <a href="web_dev-portfolio/rafting/about.html" target="_blank">
+                    <img src="images/rafting-snip.webp" alt="Rafting Website">
+                    <div class="layer">
+                        <h3>Rafting Website</h3>
+                        <p>Last Updated: April 15, 2025</p>
+                    </div>
+                </a>
+            </div>
+            <div class="project-item">
+                <img src="images/pending.webp" alt="Pending Project">
+                <div class="layer">
+                    <h3>Pending Project</h3>
+                    <p>Last Updated: N/A</p>
+                </div>
+            </div>
+        </div>
+        <div class="row"> <!-- Div container classed "row" to group the campus items -->
+            <div class="project-item">
+                <img src="images/pending.webp" alt="Pending Project">
+                <div class="layer">
+                    <h3>Pending Project</h3>
+                    <p>Last Updated: N/A</p>
+                </div>
+            </div>
+            <div class="project-item">
+                <img src="images/pending.webp" alt="Pending Project">
+                <div class="layer">
+                    <h3>Pending Project</h3>
+                    <p>Last Updated: N/A</p>
+                </div>
+            </div>
+            <div class="project-item">
+                <img src="images/pending.webp" alt="Pending Project">
+                <div class="layer">
+                    <h3>Pending Project</h3>
+                    <p>Last Updated: N/A</p>
+                </div>
+            </div>
+        </div>
+        <div class="row"> <!-- Div container classed "row" to group the campus items -->
+            <div class="project-item">
+                <img src="images/pending.webp" alt="Pending Project">
+                <div class="layer">
+                    <h3>Pending Project</h3>
+                    <p>Last Updated: N/A</p>
+                </div>
+            </div>
+            <div class="project-item">
+                <img src="images/pending.webp" alt="Pending Project">
+                <div class="layer">
+                    <h3>Pending Project</h3>
+                    <p>Last Updated: N/A</p>
+                </div>
+            </div>
+            <div class="project-item">
+                <img src="images/pending.webp" alt="Pending Project">
+                <div class="layer">
+                    <h3>Pending Project</h3>
+                    <p>Last Updated: N/A</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- -----Footer Section----- -->
+    <footer>
+        <p>&copy; 2025 WickModeDev. All rights reserved.</p>
+        <div class="social-links">
+            <a href="https://github.com/macsandoval1999/wick-mode.dev" target="_blank">
+                <i class="fa-brands fa-github"></i>
+            </a>
+            <a href="#" target="_blank">
+                <i class="fa-brands fa-linkedin"></i>
+            </a>
+            <a href="#" target="_blank">
+                <i class="fa-brands fa-twitter"></i>
+            </a>
+            <a href="#" target="_blank">
+                <i class="fa-brands fa-instagram"></i>
+            </a>
+            <a href="#" target="_blank">
+                <i class="fa-brands fa-facebook"></i>
+            </a>
+        </div>
+    </footer>
+
+
+
+    <!-- -----Scripts Section----- -->
+    <script src="script.js"></script> <!-- Link to the main JavaScript file -->
+</body>
+</html>

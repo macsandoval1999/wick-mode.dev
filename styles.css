@@ -187,6 +187,83 @@ body
     margin-bottom: 1rem;
 }
 
+.project /* "campus" Style
+    Here you can style containers classed "campus" */
+{
+    width: 80%; /* Sets the width of the campus section to 80% of its parent container */
+    margin: auto; /* Centers the campus section horizontally within its parent container */
+    text-align: center; /* Centers the text inside the campus section */
+    padding-top: 150px; /* Adds padding to the top of the campus section */
+}
+.row /* "row" Style
+    Here you can style containers classed "row" */
+{
+    margin-top:5%; /* Adds a top margin of 5% to the containers classed row */
+    display: flex; /* Sets the display of the row to flexbox, allowing for flexible layouts */
+    justify-content: space-between; /* Distributes space between the course items */
+}
+.project-item /* "campus-item" Style
+    Here you can style containers classed "campus-item" */
+{
+    flex-basis:32%; /* Sets the base width of each campus item to 32% of the row, allowing for three items to fit in a row with some space between them */
+    border-radius: 10px; /* Rounds the corners of each campus item with a radius of 10px */
+    margin-bottom: 30px; /* Adds a bottom margin of 30px to each campus item */
+    position: relative; /* Positions the campus item relative to its normal position */
+    overflow: hidden; /* Hides any overflowing content within the campus item */
+}
+.project-item img /* "campus-item" Image Style
+    Here you can style images inside containers classed "campus-item" */
+{
+    width: 100%; /* Sets the width of the image to 100% of its parent container */
+    height: 100%; /* Sets the height of the image to auto, maintaining its aspect ratio */
+    display: block; /* Displays the image as a block element */
+}
+.layer /* "layer" Style
+    Here you can style elements with the class "layer" */
+{
+    background: transparent; /* Sets the background of the layer to transparent */
+    height: 100%; /* Sets the height of the layer to 100% of its parent container */
+    width: 100%; /* Sets the width of the layer to 100% of its parent container */
+    position:absolute; /* Positions the layer absolutely within its parent container */
+    top: 0; /* Positions the top of the layer at the top of the parent container */
+    left: 0; /* Positions the left of the layer at the left of the parent container */
+    transition: 0.5s; /* Adds a transition effect to the layer, making it smooth when hovered or interacted with */
+}
+.layer:hover /* "layer" Hover Style
+    Here you can style elements with the class "layer" when hovered */
+{
+    background: var(--accent-glow);
+    opacity: 0.8; /* Darkens the background on hover */
+}
+.layer p
+{
+    background-color: transparent;
+    width: 100%;
+    color: transparent;
+}
+.layer h3 /* "layer" h3 Style
+    Here you can style h3 headers inside containers classed "layer" */
+{
+    background-color: #050505;
+    width: 100%; /* Sets the width of the heading to 100% of its parent container */
+    font-weight: 500; /* Sets the font weight of the heading to 500 (medium) */
+    color: white; /* Sets the text color of the heading to white */
+    font-size: 26px; /* Sets the font size of the heading to 26px */
+    bottom: 0; /* Positions the bottom of the heading at the bottom of the parent container */
+    left: 50%; /* Positions the left of the heading at 50% of the width of the parent container */
+    transform: translateX(-50%); /* Centers the heading horizontally */
+    position: absolute; /* Positions the heading absolutely within its parent container */
+    opacity: 0; /* Sets the initial opacity to 0 (invisible) */
+    transition: 0.5s; /* Adds a transition effect to the heading, making it smooth when hovered or interacted with */
+}
+.layer:hover h3, .layer:hover p /* "layer" h3 Hover Style
+    Here you can style h3 headers inside containers classed "layer" when hovered */
+{
+    bottom: 49%; /* Moves the heading up slightly when hovered */
+    opacity: 1; /* Sets the opacity to 1 (fully visible) when hovered */
+    color: white;
+}
+
 /* -----Footer section----- */
 footer
 {
@@ -302,5 +379,47 @@ footer
         height: 280px;
     }
 
-    /*  */
+    /* Project Section (Mobile) */
+    .row 
+    {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .project-item 
+    {
+        width: 70%;
+        height: auto;
+        border: 2px solid transparent;
+        border-color: var(--accent);
+    }
+    .layer h3 /* "layer" h3 Style */
+    {
+        opacity: 1;
+        font-size: 20px;
+        top: 50%;
+        transform: 0;
+        transition: 0;
+        height: 50px;
+        background-color: rgba(0, 0, 0, 1);
+    }
+    .project-item img /* "campus-item" Image Style */
+    {
+        opacity: 0.6;
+    }
+    .layer p
+    {
+        opacity: 1;
+        font-size: 16px;
+        font-weight: 600;
+        transform: 0;
+        transition: 0;
+        background-color: var(--accent-glow);
+        color: rgb(0, 0, 0);
+    }
+    .layer:hover h3, .layer:hover p /* "layer" h3 Hover Style
+    Here you can style h3 headers inside containers classed "layer" when hovered */
+    {
+    bottom: 0;
+    }
 }

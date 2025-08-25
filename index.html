@@ -1,33 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Portfolio of WickModeDev, showcasing skills in software engineering, web development, and project highlights.">
-    <meta name="keywords" content="WickModeDev, portfolio, software engineering, web development, projects">
-    <title>WickMode Portfolio</title> <!-- Page title -->
+    <meta charset="UTF-8"> <!-- Character encoding for the document, this ensures that the text is displayed correctly. -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Responsive design viewport, ensures proper scaling on different devices -->
+    <meta name="description" content="Portfolio of WickModeDev, showcasing skills in software engineering, web development, and project highlights."> <!-- Page description. This will be displayed in search engine results. -->
+    <meta name="keywords" content="WickModeDev, portfolio, software engineering, web development, projects"> <!-- Page keywords for SEO, the user can use these keywords to optimize search engine visibility. -->
+    <title>WickMode Dev - Home</title> <!-- Page title, displayed in the browser tab -->
     <link rel="stylesheet" href="styles.css"> <!-- Link to the main stylesheet -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"> <!-- Font Awesome link for icons -->
 </head>
+
+
+
 <body>
     <!-- -----Navigation Bar----- -->
-    <nav class="navbar">
-        <a href="#home" class="logo">WickMode Dev</a>
-        <div class="menu-icon" id="menuIcon">
-            <i class="fa-solid fa-bars"></i>
+    <nav class="navbar"> <!-- Nav container classed "navbar" -->
+        <a href="#home" class="logo">WickMode Dev</a> <!-- Hyperlink directing browser to the element with id "home". This hyperlink appears as "WickMode Dev". The element with the id "home" is in  hero section of the page, or rather the <section> container IS the element with the id "home". -->
+        <div class="menu-icon" id="menuIcon"> <!-- Div container classed "menu-icon" with an id of "menuIcon". This container is used to create a Menu icon for mobile view. By default it would display, but with css and javascript we are able to hide it from big screens and show it on small screens. -->
+            <i class="fa-solid fa-bars"></i> <!-- Font Awesome icon for the menu (hamburger icon) -->
         </div>
-        <ul class="nav-links" id="navLinks">
-            <li><a href="#home">Home</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact">Contact</a></li>
-            <li class="close-icon" id="closeIcon">
+        <ul class="nav-links" id="navLinks"> <!-- Unordered list container classed "nav-links" with an id of "navLinks". This container holds the navigation links. -->
+            <li><a href="#home">Home</a></li> <!-- List item containing a hyperlink directing the browser to the home section. It appears as "Home" -->
+            <li><a href="#skills">Skills</a></li> <!-- List item containing a hyperlink directing the browser to the skills section. It appears as "Skills" -->
+            <li><a href="projects.html">Projects</a></li> <!-- List item containing a hyperlink directing the browser to the projects section. It appears as "Projects" -->
+            <li><a href="#contact">Contact</a></li> <!-- List item containing a hyperlink directing the browser to the contact section. It appears as "Contact" -->
+            <li class="close-icon" id="closeIcon"> <!-- List item classed "close-icon" with an id of "closeIcon" containing a close icon for the mobile menu -->
                 <i class="fa-solid fa-xmark"></i>
             </li> 
         </ul>
     </nav>
-    <div class="nav-overlay" id="navOverlay"></div> <!-- Overlay for mobile navigation -->
+   
     
+
     <!-- -----Hero Section----- -->
     <section class="hero" id="home">
         <div class="hero-content">
@@ -40,6 +44,8 @@
             <img src="images/profile.webp" alt="Profile Picture" class="profile-img">
         </div>
     </section>
+
+
 
     <!-- -----Skills Section----- -->
     <section class="skills" id="skills">
@@ -63,6 +69,8 @@
         </div>
     </section>
 
+
+
     <!-- -----Footer Section----- -->
     <footer>
         <p>&copy; 2025 WickModeDev. All rights reserved.</p>
@@ -84,6 +92,8 @@
             </a>
         </div>
     </footer>
+
+
 
     <!-- -----Scripts Section----- -->
     <script src="script.js"></script> <!-- Link to the main JavaScript file -->
